@@ -5,6 +5,7 @@ public class Main {
        Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter a n value : ");
         int n = scanner.nextInt();
+        //upside
          for(int i = 1; i <= n; i++){
            for (int j = 1; j <= (n - i); j++){
                System.out.print(" ");
@@ -14,13 +15,14 @@ public class Main {
              }
              System.out.println();
          }
-        for(int i = 1; i <= n; i++){
-            // the reason why we subtract -1 is that it was giving us unnecessary spaces.
-            for (int l = n - 1; l >= (n - i); l--){
+        //downside
+        for(int l = n; l >=1; l--){
+          
+            for (int m = (n - l); m >= 1; m--){
                 System.out.print(" ");
             }
-            // the reason why we add +2 is that if we don't we won't be able to get the 4th line from the end
-            for(int m = n + 2; m>=(2*i) - 1; m--){
+        
+            for(int p = (2*l) - 1 ; p>= 1; p--){
                 System.out.print("*");
             }
             System.out.println();
